@@ -1,0 +1,174 @@
+<html>
+<head>
+  <title>Calendario</title>
+  <style>
+    html {
+      background-color: DarkGreen;
+      color: white;
+    }
+    .container {
+      display: flex;
+      height: 70%;
+      flex-wrap: wrap;
+      align-items: stretch;
+      align-content: stretch;
+      justify-content: center;
+      padding: 30px;
+    }
+    .title {
+      text-align: center;
+    } 
+    .flex-item {
+      width: 100%;
+      max-width: 500px;
+      max-height: auto;
+      border: solid GoldenRod;
+      border-radius: 10px;
+      margin: 20px;
+    }
+    .padded {
+      margin: 20px;
+      padding: 0 5px;
+    }
+    ul {
+      margin: 20px;
+    }
+    .calendar {
+      display: grid;
+      row-gap: 7%;
+      column-gap: 7%;
+      text-align: center;
+      justify-items: center;
+      width: auto;
+      height: auto;
+      margin: 10px;
+      height: 50%;
+    }
+    .r1 {
+      grid-row: 1;
+      font-size: 2em;
+      margin: 10px;
+    }
+    .r2 {
+      grid-row: 2;
+      font-size: calc(2em - 5px);
+      font-variant: small-caps;
+    }
+    .r3 { grid-row: 3; }
+    .r4 { grid-row: 4; }
+    .r5 { grid-row: 5; }
+    .r6 { grid-row: 6; }
+    .r7 { grid-row: 7; }
+    .r8 { grid-row: 8; }
+
+    .c1-7 { grid-column: 1/8; }
+    .c1 { grid-column: 1; }
+    .c2 { grid-column: 2; }
+    .c3 { grid-column: 3; }
+    .c4 { grid-column: 4; }
+    .c5 { grid-column: 5; }
+    .c6 { grid-column: 6; }
+    .c7 { grid-column: 7; }
+
+    button {
+      background-color: DarkGreen;
+      color: white;
+      border-radius: 50px;
+      border: none;
+      padding: 5px;
+    }
+    .clickable:hover {
+      color: white;
+      border-radius: 50px;
+      background: ForestGreen;
+    }
+    .clickable:focus {
+      background: ForestGreen;
+    }
+    .clickable:active {
+      background: green;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">Calendar App</h1> 
+  <div class="container">
+    <div class="flex-item">
+      <br/>
+      <div class="padded">
+      <h2>Marzo 2024</h2>
+      <p>Il calendario qui a destra è stato realizzato usando il sistema Grid di CSS.
+         Al contrario, l'allineamento dell'header e dei due main è stato realizzato usando le proprietà Flex.
+      </p>
+      <ul>
+        <li>La pseudo-class <strong>:hover</strong> consente di modificare dello stile quando si passa il mouse sulle date.</li>
+        <li>La pseudo-class <strong>:focus</strong> consente di modificare lo stile quando si clicca su un elemento come un input o un bottone.</li>
+        <li>La pseudo-class <strong>:active</strong> server per dare feedback all'utente che un elemento ha ricevuto un evento come click.</li>
+      </ul>
+      </div>
+    </div>
+    <div class="flex-item">
+      <br/>
+      <div class="calendar">
+        <div class="r1 c1-7">March 2024</div>
+          
+        <div class="r2 c1">Su</div>
+        <div class="r2 c2">Mo</div>
+        <div class="r2 c3">Tu</div>
+        <div class="r2 c4">We</div>
+        <div class="r2 c5">Th</div>
+        <div class="r2 c6">Fr</div>
+        <div class="r2 c7">Sa</div>
+
+        <button class="r3 c1"></button>
+        <button class="r3 c2"></button>
+        <button class="r3 c3"></button>
+        <button class="r3 c4"></button>
+        <button class="r3 c5"></button>
+        <button class="r3 c6 clickable">1</button>
+        <button class="r3 c7 clickable">2</button>
+
+        <button class="r4 c1 clickable">3</button>
+        <button class="r4 c2 clickable">4</button>
+        <button class="r4 c3 clickable">5</button>
+        <button class="r4 c4 clickable">6</button>
+        <button cl class="r4 c5 clickable">7</button>
+        <button cl class="r4 c6 clickable">8</button>
+        <button cl class="r4 c7 clickable">9</button>
+
+        <button cl class="r5 c1 clickable">10</button>
+        <button cl class="r5 c2 clickable">11</button>
+        <button cl class="r5 c3 clickable">12</button>
+        <button cl class="r5 c4 clickable">13</button>
+        <button cl class="r5 c5 clickable">14</button>
+        <button cl class="r5 c6 clickable">15</button>
+        <button cl class="r5 c7 clickable">16</button>
+
+        <button cl class="r6 c1 clickable">17</button>
+        <button cl class="r6 c2 clickable">18</button>
+        <button cl class="r6 c3 clickable">19</button>
+        <button cl class="r6 c4 clickable">20</button>
+        <button cl class="r6 c5 clickable">21</button>
+        <button cl class="r6 c6 clickable">22</button>
+        <button cl class="r6 c7 clickable">23</button>
+
+        <button cl class="r7 c1 clickable">24</button>
+        <button cl class="r7 c2 clickable">25</button>
+        <button cl class="r7 c3 clickable">26</button>
+        <button cl class="r7 c4 clickable">27</button>
+        <button cl class="r7 c5 clickable">28</button>
+        <button cl class="r7 c6 clickable">29</button>
+        <button cl class="r7 c7 clickable">30</button>
+
+        <button cl class="r8 c1 clickable">31</button>
+        <button cl class="r8 c2"></button>
+        <button cl class="r8 c3"></button>
+        <button cl class="r8 c4"></button>
+        <button cl class="r8 c5"></button>
+        <button cl class="r8 c6"></button>
+        <button cl class="r8 c7"></button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
